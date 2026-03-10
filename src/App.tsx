@@ -4,16 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const handleClick = () => {
+    console.log("Project Running!");
+  };
 
   return (
-    <>
-
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    </>
-  )
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Hello, Pradeep!</h1>
+      <button onClick={handleClick} style={{ padding: "10px 20px", fontSize: "16px" }}>
+        Click Me
+      </button>
+    </div>
+  );
 }
+
+
 
 export default App
